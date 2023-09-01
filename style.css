@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: kanit;
+    user-select: none;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100%;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    width: 100%;
+    color: crimson;
+    padding: 30px;
+}
+
+.img {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(187, 6, 130, 0.596);
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: pink;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #730a5262;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: crimson;
+    color: #ffffff;
+    box-shadow: 0px 10px 40px -12px rgb(214, 2, 2);
+}
+
+.btn-login:hover {
+    cursor: pointer;
+    color: rgb(245, 91, 122);
+}
+
+@media only screen and (max-width: 950px){
+
+    .card-login{
+        width: 85%;
+    }
+
+    .left-login > h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .main-login{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .left-login > h1{
+        font-size: 30px;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .intro{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
